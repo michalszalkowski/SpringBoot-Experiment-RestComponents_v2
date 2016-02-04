@@ -1,4 +1,4 @@
-package pl.btbw.web.product;
+package pl.btbw.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
