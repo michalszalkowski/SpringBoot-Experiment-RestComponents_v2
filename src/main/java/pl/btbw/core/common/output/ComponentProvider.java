@@ -7,17 +7,17 @@ import java.util.Map;
 
 public class ComponentProvider {
 
-	private Mappable mappable;
+	private Mappable entity;
 
 	public List<Component> components = new ArrayList<>();
 	public Map<String, Component> componentMap = new HashMap<>();
 
-	public ComponentProvider(Mappable mappable) {
-		this.mappable = mappable;
+	public ComponentProvider(Mappable entity) {
+		this.entity = entity;
 	}
 
 	public ComponentProvider add(Component component) {
-		component.map(mappable);
+		component.map(entity);
 		components.add(component);
 		componentMap.put(component.getNameComponent(), component);
 		return this;
