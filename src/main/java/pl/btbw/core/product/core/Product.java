@@ -39,10 +39,12 @@ public class Product implements Mappable, Updatable {
 	public Product() {
 	}
 
+	// o/ component initializer
 	public ComponentProvider componentProvider() {
 		return new ComponentProvider(this);
 	}
 
+	// i/ component initializer
 	public void update(FormComponent form) {
 		form.update(this);
 	}
